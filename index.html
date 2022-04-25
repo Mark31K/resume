@@ -1,88 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Резюме Марка Копнева">
-  <meta name="keywords" content="Резюме, разработчик Front-end, HTML, CSS">
-  <title>Резюме</title>
-</head>
-<body>
-  <img src="img/avatar.jpg" alt="avatar" width="200">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Резюме Марка Копнева" />
+    <meta name="keywords" content="Резюме, разработчик Front-end, HTML, CSS" />
+    <title>Резюме</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <img src="avatar.jpg" alt="avatar" class="avatar" />
 
-  <h1>Марк Копнев</h1>
+        <div class="info-text">
+          <h1>Марк Копнев</h1>
+          <p>
+            Я начинаю изучать <strong>программирование</strong> на языке
+            <strong>Java-Script</strong>
+          </p>
 
-  <p>Я начинаю изучать <strong>программирование</strong> на языке <strong>Java-Script</strong></p>
+          <p>
+            Также я люблю заниматься <em>спортом</em> и <em>познанием себя</em>
+          </p>
 
-  <p>Также я люблю заниматься <em>спортом</em> и <em>познанием себя</em></p>
+          <h3>Список социальных сетей:</h3>
+          <a href="https://vk.com/mark_kopnev" target="_blank">VK</a>
+          |
+          <a href="https://t.me/ArcticSugar" target="_blank">Telegram</a>
+        </div>
+      </div>
 
-  <h3>Список социальных сетей:</h3>
-  
-  <a href="https://vk.com/mark_kopnev" target="_blank">VK</a>
-  |
-  <a href="https://t.me/ArcticSugar" target="_blank">Telegram</a>
+      <div class="card hobbies">
+        <h3>Мои хобби</h3>
+        <ol class="list">
+          <li>Готовка вкусной еды</li>
+          <li>Йога</li>
+          <li>Игры</li>
+          <li>Бег</li>
+        </ol>
+      </div>
 
-  <h3>Мои хобби</h3>
+      <div class="card experience">
+        <h3>Опыт работы</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Название</th>
+              <th>Должность</th>
+              <th>Год</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Adidas</td>
+              <td>Специалист по сервису</td>
+              <td>2018-2020</td>
+            </tr>
+            <tr>
+              <td>Wildberries</td>
+              <td>Кладовщик</td>
+              <td>2021-2022</td>
+            </tr>
+            <tr>
+              <td>Familia</td>
+              <td>РТЗ</td>
+              <td>2022 - сейчас</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-  <ol>
-    <li>Готовка вкусной еды</li>
-    <li>Йога</li>
-    <li>Игры</li>
-    <li>Бег</li>
-  </ol>
+      <div class="form">
+        <h2>Связаться со мной</h2>
+        <form action="#">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="text">Ваше имя:</label>
+              <input type="text" id="text" placeholder="Введите имя" />
+            </div>
+            <div class="form-group">
+              <label for="email">Ваш email:</label>
+              <input type="email" id="email" placeholder="Введите email" />
+            </div>
+          </div>
 
-  <h3>Опыт работы</h3>
+          <div class="form-group">
+            <label for="message">Ваше сообщение:</label>
+            <textarea
+              id="message"
+              cols="20"
+              rows="5"
+              placeholder="Введите сообщение..."
+            ></textarea>
+          </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Adidas</td>
-        <td>Специалист по сервису</td>
-        <td>2018-2020</td>
-      </tr>
-      <tr>
-        <td>Wildberries</td>
-        <td>Кладовщик</td>
-        <td>2021-2022</td>
-      </tr>
-      <tr>
-        <td>Familia</td>
-        <td>РТЗ</td>
-        <td>2022 - сейчас</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h2>Связаться со мной</h2>
-
-  <form action="#">
-
-    <label for="text">Ваше имя:</label>
-    <input type="text" id="text" placeholder="Введите имя">
-
-    <br>
-
-    <label for="email">Ваш email:</label>
-    <input type="email" id="email" placeholder="Введите email">
-    
-    <br>
-
-    <label for="message">Ваше сообщение:</label>
-    <br>
-    <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-    <br>
-
-    <button type="submit">Отправить!</button>
-    
-  </form>
-
-</body>
+          <button type="submit" class="btn">Отправить!</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
